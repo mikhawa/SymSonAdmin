@@ -44,6 +44,20 @@ class BlogPost
 
 
     /**
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
+     */
+    private $category;
+
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
+    }
+
+    public function getCategory()
+    {
+        return $this->category;
+    }
+    /**
      * Get id
      *
      * @return integer
