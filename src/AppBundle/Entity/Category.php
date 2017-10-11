@@ -39,6 +39,7 @@ class Category
         $this->blogPosts = new ArrayCollection();
     }
 
+
     public function getBlogPosts()
     {
         return $this->blogPosts;
